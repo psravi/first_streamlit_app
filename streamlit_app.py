@@ -57,7 +57,7 @@ def get_fruit_load_list():
 def insert_row_snwoflake(new_fruit):
     with my_cnx.cursor() as my_cur:
           my_cur.execute("INSERT INTO FRUIT_LOAD_LIST VALUES ('" + new_fruit + "')")
-          return "Thanks for adding " + new_fruit) 
+          return "Thanks for adding " + new_fruit
 
 # Add a button to load the fruit
 if streamlit.button('Get Fruit Load List'):
